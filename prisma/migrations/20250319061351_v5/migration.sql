@@ -2,7 +2,7 @@
 CREATE TABLE "Student" (
     "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
-    "dateOfBirth" TIMESTAMP(3) NOT NULL,
+    "dateOfBirth" TEXT NOT NULL,
     "aadharNumber" TEXT NOT NULL,
     "proctorId" TEXT NOT NULL,
 
@@ -23,8 +23,8 @@ CREATE TABLE "Professor" (
 CREATE TABLE "LibraryMembership" (
     "id" TEXT NOT NULL,
     "studentId" TEXT NOT NULL,
-    "issueDate" TIMESTAMP(3) NOT NULL,
-    "expiryDate" TIMESTAMP(3) NOT NULL,
+    "issueDate" TEXT NOT NULL,
+    "expiryDate" TEXT NOT NULL,
 
     CONSTRAINT "LibraryMembership_pkey" PRIMARY KEY ("id")
 );
